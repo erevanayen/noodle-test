@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Noodle v0.0.11</title>
+    <title>Noodle v0.0.12</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <script type="module" crossorigin src="/noodle-test/assets/index-3xwghZQa.js"></script>
+    <script type="module" crossorigin src="/noodle-test/assets/index-ja0ipCQa.js"></script>
     <link rel="stylesheet" crossorigin href="/noodle-test/assets/index-SYsqssVS.css">
   </head>
   <body>
@@ -135,6 +135,18 @@
           id="slider-speed-wave"
         />
       </div>
+      <div class="slider-container">
+        <p class="slider-value">
+          colors:
+          <input type="color" value="#ff7b00" id="value-col-1" />
+          <input type="color" value="#542bc5" id="value-col-2" />
+          <input type="color" value="#a1f9f8" id="value-col-3" />
+        </p>
+      </div>
+      <div class="slider-container">
+        <p class="slider-value">legacy colors: (uncheck to use custom color)</p>
+        <input type="checkbox" checked="true" id="value-legacy-col" />
+      </div>
       <button
         type="button"
         onclick="toggleMenu(false)"
@@ -144,7 +156,7 @@
         hide
       </button>
       <p id="version">
-        v0.0.11 made by
+        v0.0.12 made by
         <a href="https://erevanayen.art/" target="_blank">@erevanayen</a>
       </p>
     </div>
