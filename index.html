@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Noodle v0.0.13</title>
+    <title>Noodle v0.0.14</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <script type="module" crossorigin src="/noodle-test/assets/index-A6VWjYqp.js"></script>
+    <script type="module" crossorigin src="/noodle-test/assets/index-2kpavWtz.js"></script>
     <link rel="stylesheet" crossorigin href="/noodle-test/assets/index-SYsqssVS.css">
   </head>
   <body>
@@ -147,7 +147,14 @@
         <p class="slider-value">legacy colors: (uncheck to use custom color)</p>
         <input type="checkbox" checked="true" id="value-legacy-col" />
       </div>
-      <button type="button" id="button-share" class="ui-button">share</button>
+      <button
+        type="button"
+        onclick="urlToClip()"
+        id="button-share"
+        class="ui-button"
+      >
+        share
+      </button>
       <button
         type="button"
         onclick="toggleMenu(false)"
@@ -157,7 +164,7 @@
         hide
       </button>
       <p id="version">
-        v0.0.13 made by
+        v0.0.14 made by
         <a href="https://erevanayen.art/" target="_blank">@erevanayen</a>
       </p>
     </div>

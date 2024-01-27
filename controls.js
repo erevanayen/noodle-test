@@ -10,3 +10,13 @@ function toggleMenu(state) {
     btnShow.classList.remove("button-hidden");
   }
 }
+
+urlToClip = async () => {
+  const url = window.location.href;
+  try {
+    await navigator.clipboard.writeText(url);
+    console.log("Url copied to clipboard");
+  } catch (err) {
+    console.error("Failed to copy: ", err);
+  }
+};
