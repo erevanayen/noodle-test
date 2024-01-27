@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Noodle v0.0.12</title>
+    <title>Noodle v0.0.13</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <script type="module" crossorigin src="/noodle-test/assets/index-ja0ipCQa.js"></script>
+    <script type="module" crossorigin src="/noodle-test/assets/index-A6VWjYqp.js"></script>
     <link rel="stylesheet" crossorigin href="/noodle-test/assets/index-SYsqssVS.css">
   </head>
   <body>
@@ -110,12 +110,12 @@
       <div class="slider-container">
         <p class="slider-value">
           rotation speed:
-          <input type="number" min="-50" max="50" id="value-speed-rot" />
+          <input type="number" min="0" max="100" id="value-speed-rot" />
         </p>
         <input
           type="range"
-          min="-50"
-          max="50"
+          min="1"
+          max="100"
           value="20"
           class="slider"
           id="slider-speed-rot"
@@ -124,12 +124,12 @@
       <div class="slider-container">
         <p class="slider-value">
           wave change speed:
-          <input type="number" min="-50" max="50" id="value-speed-wave" />
+          <input type="number" min="1" max="100" id="value-speed-wave" />
         </p>
         <input
           type="range"
-          min="-50"
-          max="50"
+          min="1"
+          max="100"
           value="20"
           class="slider"
           id="slider-speed-wave"
@@ -147,6 +147,7 @@
         <p class="slider-value">legacy colors: (uncheck to use custom color)</p>
         <input type="checkbox" checked="true" id="value-legacy-col" />
       </div>
+      <button type="button" id="button-share" class="ui-button">share</button>
       <button
         type="button"
         onclick="toggleMenu(false)"
@@ -156,7 +157,7 @@
         hide
       </button>
       <p id="version">
-        v0.0.12 made by
+        v0.0.13 made by
         <a href="https://erevanayen.art/" target="_blank">@erevanayen</a>
       </p>
     </div>
