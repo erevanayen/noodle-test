@@ -2,14 +2,139 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Noodle v0.1.0</title>
+    <title>Noodle v0.0.16</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <script type="module" crossorigin src="/noodle-test/assets/index-FI7UYpsF.js"></script>
-    <link rel="stylesheet" crossorigin href="/noodle-test/assets/index-e5hTVUzR.css">
+    <script type="module" crossorigin src="/noodle-test/assets/index-pOzAAnQb.js"></script>
+    <link rel="stylesheet" crossorigin href="/noodle-test/assets/index-2-i9cnVp.css">
   </head>
   <body>
     <div id="menu">
-      <div id="menu-controls"></div>
+      <div class="slider-container">
+        <p class="slider-value">
+          FOV:
+          <input type="number" min="1" max="100" id="value-fov" />
+        </p>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="25"
+          class="slider"
+          id="slider-fov"
+        />
+      </div>
+      <div class="slider-container">
+        <p class="slider-value">
+          spacing X:
+          <input type="number" min="1" max="100" id="value-space-x" />
+        </p>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="25"
+          class="slider"
+          id="slider-space-x"
+        />
+      </div>
+      <div class="slider-container">
+        <p class="slider-value">
+          spacing Y:
+          <input type="number" min="1" max="100" id="value-space-y" />
+        </p>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="100"
+          class="slider"
+          id="slider-space-y"
+        />
+      </div>
+      <div class="slider-container">
+        <p class="slider-value">
+          spacing Z:
+          <input type="number" min="1" max="100" id="value-space-z" />
+        </p>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="25"
+          class="slider"
+          id="slider-space-z"
+        />
+      </div>
+      <div class="slider-container">
+        <p class="slider-value">
+          wave amp:
+          <input type="number" min="1" max="100" id="value-wave-amp" />
+        </p>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="35"
+          class="slider"
+          id="slider-wave-amp"
+        />
+      </div>
+      <div class="slider-container">
+        <p class="slider-value">
+          wave freq:
+          <input type="number" min="1" max="100" id="value-wave-freq" />
+        </p>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="35"
+          class="slider"
+          id="slider-wave-freq"
+        />
+      </div>
+      <div class="slider-container">
+        <p class="slider-value">
+          fly speed Z:
+          <input type="number" min="-50" max="50" id="value-speed-z" />
+        </p>
+        <input
+          type="range"
+          min="-50"
+          max="50"
+          value="10"
+          class="slider"
+          id="slider-speed-z"
+        />
+      </div>
+      <div class="slider-container">
+        <p class="slider-value">
+          rotation speed:
+          <input type="number" min="0" max="100" id="value-speed-rot" />
+        </p>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="20"
+          class="slider"
+          id="slider-speed-rot"
+        />
+      </div>
+      <div class="slider-container">
+        <p class="slider-value">
+          wave change speed:
+          <input type="number" min="1" max="100" id="value-speed-wave" />
+        </p>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="20"
+          class="slider"
+          id="slider-speed-wave"
+        />
+      </div>
       <div class="slider-container">
         <p class="slider-value">
           colors:
@@ -19,29 +144,27 @@
         </p>
       </div>
       <div class="slider-container">
+        <p class="slider-value">legacy colors: (uncheck to use custom color)</p>
         <input type="checkbox" checked="true" id="value-legacy-col" />
-        <label for="value-legacy-col">legacy colors</label>
       </div>
-      <div class="buttons">
-        <button
-          type="button"
-          onclick="toggleMenu(false)"
-          id="button-hide"
-          class="ui-button"
-        >
-          hide
-        </button>
-        <button
-          type="button"
-          onclick="urlToClip()"
-          id="button-share"
-          class="ui-button"
-        >
-          share
-        </button>
-      </div>
+      <button
+        type="button"
+        onclick="toggleMenu(false)"
+        id="button-hide"
+        class="ui-button"
+      >
+        hide
+      </button>
+      <button
+        type="button"
+        onclick="urlToClip()"
+        id="button-share"
+        class="ui-button"
+      >
+        share
+      </button>
       <p id="version">
-        v0.1.0 made by
+        v0.0.16 made by
         <a href="https://erevanayen.art/" target="_blank">@erevanayen</a>
       </p>
     </div>
@@ -54,6 +177,6 @@
       &lt;
     </button>
     <canvas id="c" onclick="toggleMenu(false)"></canvas>
-    <script src="/src/controls.ts"></script>
+    <script src="/noodle-test/controls.js"></script>
   </body>
 </html>
